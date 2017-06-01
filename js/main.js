@@ -54,20 +54,33 @@ var wordReverse = function (str){
 wordReverse("Now I know what a TV dinner feels like");
 
 //round 5
-var letterReverse = function (str) {
-	var splitArray = str.split();
+var letterReverse = function (arrayOfStrings) {
+	var splitArray = str.split("").reverse().join("").split(" ").reverse().join(" ")
 	console.log(splitArray);
 }
 	letterReverse ("Now I know what a TV dinner feels like");
+	//answer = woN I wonk tahw a VT rennid sleef ekil
 
+//Round 6
+var longest = function (array){
 
+	var long = "";//hold variable of the current longest word
+	var longestWord = 0;//
+	var l = long.length;//length of the word in the long varialbe. The length of the current longest word
 
+	for (var i = 0; i < array.length; i++) {
 
-
-
-
-
-
+		if (l < array[i].length) {
+			long = array[i];
+			l = array[i].length;
+			longestWord = i;
+		}else if (array[i].length === long.length){
+			long = array[longestWord];
+		}
+	}
+	console.log(long);
+}
+	longest (["oh", "good", "grief"]);
 
 
 
