@@ -38,7 +38,57 @@ var toonify = function (accent, str) {
 			var elmerTalk = str.replace(re2, "w");
 			console.log(elmerTalk);
 		}	else {
-			
+
 		}
 }
 	toonify("daffy", "so you smell like sausage");
+
+//round 4
+var wordReverse = function (str){
+	var newArray = str.split(" ");
+	var reverseArray = newArray.reverse();
+	
+	var answer = reverseArray.join(" ");
+		console.log(answer);
+}
+wordReverse("Now I know what a TV dinner feels like");
+
+//round 5
+var letterReverse = function (str) {
+	var splitArray = str.split();
+	console.log(splitArray);
+}
+	letterReverse ("Now I know what a TV dinner feels like");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
