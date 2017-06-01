@@ -24,3 +24,21 @@ var transmogrifier = function (a, b, c){
 	//transmogrifier(5, 4, 3) = 8000
 	//transmogrifier(13, 12, 5) = 92389579776
 	//transmogrifier(42, 13, 7) = 14466001271480793000
+
+//round 3
+var toonify = function (accent, str) {
+	
+	var re1 = /s/gi;
+	var re2 = /r/gi;
+
+		if (accent === "daffy") {
+			var daffyTalk = str.replace(re1, "th");
+			console.log(daffyTalk);
+		} else if (accent === "elmer"){
+			var elmerTalk = str.replace(re2, "w");
+			console.log(elmerTalk);
+		}	else {
+			
+		}
+}
+	toonify("daffy", "so you smell like sausage");
