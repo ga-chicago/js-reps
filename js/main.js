@@ -49,8 +49,9 @@ var wordReverse = function (str){
 	var reverseArray = newArray.reverse();
 	
 	var answer = reverseArray.join(" ");
-		console.log(answer);
+	return answer;	
 }
+
 wordReverse("Now I know what a TV dinner feels like");
 
 //round 5
@@ -68,13 +69,13 @@ var longest = function (array){
 	var longestWord = 0;//
 	var l = long.length;//length of the word in the long varialbe. The length of the current longest word
 
-	for (var i = 0; i < array.length; i++) {
+	for (var i = 0; i < array.length; i++) {//loops through
 
-		if (l < array[i].length) {
-			long = array[i];
-			l = array[i].length;
-			longestWord = i;
-		}else if (array[i].length === long.length){
+		if (l < array[i].length) { //checks if the length of the current longest word is great than the current word in the iteration.
+			long = array[i];//stores the word in the above is true
+			l = array[i].length;//adds the length of the above word
+			longestWord = i;//stores the current iteration number
+		}else if (array[i].length === long.length){//checks to see if the current iteration word and the current longest word are equal
 			long = array[longestWord];
 		}
 	}
@@ -83,8 +84,13 @@ var longest = function (array){
 	longest (["oh", "good", "grief"]);
 
 
+//round 7
 
-
+var repMaster = function(string, myFunction){
+		
+		return myFunction(string) + " proves that I am the rep MASTER!";
+		}
+	repMaster("Never give your heart to a blockhead", wordReverse);
 
 
 
