@@ -85,13 +85,23 @@ var longest = function (array){
 
 
 //round 7
+//upperCase function
+var toUpperCase = function (string) {
+		var answer = string.toUpperCase();
+
+		return answer
+}
+toUpperCase("I finished this practice");
+
 
 var repMaster = function(string, myFunction){
 		
 		return myFunction(string) + " proves that I am the rep MASTER!";
 		}
-	repMaster("Never give your heart to a blockhead", wordReverse);
-
+	
+		repMaster("I finished this practice", toUpperCase);
+	//answer#1
+	//repMaster("Never give your heart to a blockhead", wordReverse);
 
 
 
