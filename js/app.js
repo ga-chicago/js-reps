@@ -80,6 +80,16 @@ letterReverse("Put Hans back on the line")
 
 
 
+// Round 6
+
+// let str1 = ["oh", "good", "grief"];
+
+// const longest = function(str){
+// 	for(let i = 0; i < str.length; i++){
+// 		if(str[i].length > str[i+1].length)
+// 	}
+// // }
+
 
 
 
