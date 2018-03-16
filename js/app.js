@@ -46,3 +46,40 @@ const toonify = function(accent, sentence){
 	}
 }
 toonify("daffy", "so you smell like sausage")
+
+
+
+
+
+// ROUND 4
+// SKIP
+
+
+
+
+// ROUND 5
+
+const letterReverse = function(str){
+	// Split string
+	let arrStr = str.split("");
+	// console.log(arrStr);
+	
+	// Reverse
+	let revStr = arrStr.reverse();
+	// console.log(revStr)
+	
+	// join
+	return revStr.join("")
+	
+}
+letterReverse("Now I know what a TV dinner feels like");
+
+letterReverse("Put Hans back on the line")
+
+
+
+
+
+
+
+
