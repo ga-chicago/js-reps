@@ -243,6 +243,7 @@ console.log(calculate(2,3,"exp"));
 
 const reverseWordOrder = (str)=>{
 	let reverseString = '';
+	//split turns string into an array at the spaces
 	let removeSpace = str.split(' ');
 	for(let i = 1; i <= removeSpace.length; i++){
 		reverseString += removeSpace[removeSpace.length - [i]] + ' ';
