@@ -305,49 +305,6 @@ console.log(checkPalindrome('racecar'));
 
 
 
-//Round 1
-
-const lengths = (arr)=>{
-	lengthArray =[];
-	for (let i = 0; i < arr.length; i ++){
-		lengthArray.push(arr[i].length);
-	}
-	return lengthArray;
-}
-
-
-console.log(lengths(['red','green','blue']));
-
-
-
-//Round 2
-
-const transmogrifier = (a,b,c)=>{
-	return Math.pow((a*b),c);
-}
-
-console.log(transmogrifier(2,5,3));
-
-
-//Round 3
-
-const toonify = (accent,sentence)=>{
-	if(accent === "daffy"){
-		let newSentence = sentence.replace(/s/g,"th");
-		return newSentence;
-	}
-	else if(accent === "elmer"){
-		let newSentence = sentence.replace(/r/g,"w");
-		return newSentence;
-	}
-	else{
-		return sentence;
-	}
-}
-
-console.log(toonify('elmer','I love rock and roll'));
-
-
 
 
 
